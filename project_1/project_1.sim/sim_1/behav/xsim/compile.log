@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_util_vector_logic_0_1/sim/design_1_util_vector_logic_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_util_vector_logic_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_util_vector_logic_1_1/sim/design_1_util_vector_logic_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_util_vector_logic_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_1/project_1/project_1.srcs/sim_1/new/Sim_N1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_N1
+WARNING: [VRFC 10-1581] illegal format specifier , for display [D:/lab_1/project_1/project_1.srcs/sim_1/new/Sim_N1.v:47]

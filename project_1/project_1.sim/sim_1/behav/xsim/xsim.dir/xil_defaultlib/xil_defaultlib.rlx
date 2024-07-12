@@ -1,0 +1,11 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/lab_1/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1709714515,vhdl,,,,design_1_wrapper,,,,,,,,
+D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ila_0_1/sim/design_1_ila_0_1.vhd,1709714516,vhdl,,,,design_1_ila_0_1,,,,,,,,
+D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_util_vector_logic_0_1/sim/design_1_util_vector_logic_0_1.v,1709711612,verilog,,D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_util_vector_logic_1_1/sim/design_1_util_vector_logic_1_1.v,,design_1_util_vector_logic_0_1,,,,,,,,
+D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_util_vector_logic_1_1/sim/design_1_util_vector_logic_1_1.v,1709711612,verilog,,D:/lab_1/project_1/project_1.srcs/sim_1/new/Sim_N1.v,,design_1_util_vector_logic_1_1,,,,,,,,
+D:/lab_1/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.vhd,1709714515,vhdl,,,,design_1,,,,,,,,
+D:/lab_1/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/lab_1/project_1/project_1.srcs/sim_1/new/Sim_N1.v,1710921176,verilog,,,,sim_N1,,,,,,,,

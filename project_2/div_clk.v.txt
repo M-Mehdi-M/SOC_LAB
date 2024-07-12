@@ -1,0 +1,32 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    16:33:22 03/19/2012 
+// Design Name: 
+// Module Name:    div_clk 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module div_clk(clk, reset, clk_out);
+	input clk, reset;
+	output clk_out;
+	reg [31:0] tmp;
+	always @(posedge clk)	
+	begin
+		if(reset) tmp = 0;
+		tmp = tmp+1;
+	end
+	
+	assign clk_out = tmp[26];
+endmodule

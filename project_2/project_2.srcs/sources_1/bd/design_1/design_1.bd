@@ -1,0 +1,345 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "BinaryCounter_0": "",
+      "afisare_7seg_0": "",
+      "conversie_bin_BCD_0": "",
+      "divizor_ceas_0": "",
+      "BinaryCounter_1": "",
+      "conversie_bin_BCD_1": ""
+    },
+    "ports": {
+      "DP_0": {
+        "direction": "O"
+      },
+      "Seg_0": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "An_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "clk_in_0": {
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "pauza_0": {
+        "direction": "I"
+      },
+      "clk_out_led_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "BinaryCounter_0": {
+        "vlnv": "xilinx.com:module_ref:BinaryCounter:1.0",
+        "xci_name": "design_1_BinaryCounter_0_0",
+        "xci_path": "ip\\design_1_BinaryCounter_0_0\\design_1_BinaryCounter_0_0.xci",
+        "inst_hier_path": "BinaryCounter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BinaryCounter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_out_led": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "pauza": {
+            "direction": "I"
+          },
+          "valoare_bin": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "carry_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "afisare_7seg_0": {
+        "vlnv": "xilinx.com:module_ref:afisare_7seg:1.0",
+        "xci_name": "design_1_afisare_7seg_0_0",
+        "xci_path": "ip\\design_1_afisare_7seg_0_0\\design_1_afisare_7seg_0_0.xci",
+        "inst_hier_path": "afisare_7seg_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "afisare_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_out_seg": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "BCD0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "An": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Seg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "DP": {
+            "direction": "O"
+          }
+        }
+      },
+      "conversie_bin_BCD_0": {
+        "vlnv": "xilinx.com:module_ref:conversie_bin_BCD:1.0",
+        "xci_name": "design_1_conversie_bin_BCD_0_0",
+        "xci_path": "ip\\design_1_conversie_bin_BCD_0_0\\design_1_conversie_bin_BCD_0_0.xci",
+        "inst_hier_path": "conversie_bin_BCD_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "conversie_bin_BCD",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "valoare_bin": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "BCD0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "divizor_ceas_0": {
+        "vlnv": "xilinx.com:module_ref:divizor_ceas:1.0",
+        "xci_name": "design_1_divizor_ceas_0_0",
+        "xci_path": "ip\\design_1_divizor_ceas_0_0\\design_1_divizor_ceas_0_0.xci",
+        "inst_hier_path": "divizor_ceas_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "divizor_ceas",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_in": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk_out_led": {
+            "direction": "O"
+          },
+          "clk_out_seg": {
+            "direction": "O"
+          }
+        }
+      },
+      "BinaryCounter_1": {
+        "vlnv": "xilinx.com:module_ref:BinaryCounter:1.0",
+        "xci_name": "design_1_BinaryCounter_0_1",
+        "xci_path": "ip\\design_1_BinaryCounter_0_1\\design_1_BinaryCounter_0_1.xci",
+        "inst_hier_path": "BinaryCounter_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BinaryCounter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_out_led": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "pauza": {
+            "direction": "I"
+          },
+          "valoare_bin": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "carry_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "conversie_bin_BCD_1": {
+        "vlnv": "xilinx.com:module_ref:conversie_bin_BCD:1.0",
+        "xci_name": "design_1_conversie_bin_BCD_0_1",
+        "xci_path": "ip\\design_1_conversie_bin_BCD_0_1\\design_1_conversie_bin_BCD_0_1.xci",
+        "inst_hier_path": "conversie_bin_BCD_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "conversie_bin_BCD",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "valoare_bin": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "BCD0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BinaryCounter_0_valoare_bin": {
+        "ports": [
+          "BinaryCounter_0/valoare_bin",
+          "conversie_bin_BCD_0/valoare_bin"
+        ]
+      },
+      "BinaryCounter_1_carry_out": {
+        "ports": [
+          "BinaryCounter_1/carry_out",
+          "BinaryCounter_0/clk_out_led"
+        ]
+      },
+      "BinaryCounter_1_valoare_bin": {
+        "ports": [
+          "BinaryCounter_1/valoare_bin",
+          "conversie_bin_BCD_1/valoare_bin"
+        ]
+      },
+      "afisare_7seg_0_An": {
+        "ports": [
+          "afisare_7seg_0/An",
+          "An_0"
+        ]
+      },
+      "afisare_7seg_0_DP": {
+        "ports": [
+          "afisare_7seg_0/DP",
+          "DP_0"
+        ]
+      },
+      "afisare_7seg_0_Seg": {
+        "ports": [
+          "afisare_7seg_0/Seg",
+          "Seg_0"
+        ]
+      },
+      "clk_in_0_1": {
+        "ports": [
+          "clk_in_0",
+          "divizor_ceas_0/clk_in"
+        ]
+      },
+      "conversie_bin_BCD_0_BCD0": {
+        "ports": [
+          "conversie_bin_BCD_0/BCD0",
+          "afisare_7seg_0/BCD0"
+        ]
+      },
+      "conversie_bin_BCD_0_BCD1": {
+        "ports": [
+          "conversie_bin_BCD_0/BCD1",
+          "afisare_7seg_0/BCD1"
+        ]
+      },
+      "conversie_bin_BCD_1_BCD0": {
+        "ports": [
+          "conversie_bin_BCD_1/BCD0",
+          "afisare_7seg_0/BCD2"
+        ]
+      },
+      "conversie_bin_BCD_1_BCD1": {
+        "ports": [
+          "conversie_bin_BCD_1/BCD1",
+          "afisare_7seg_0/BCD3"
+        ]
+      },
+      "divizor_ceas_0_clk_out_led": {
+        "ports": [
+          "divizor_ceas_0/clk_out_led",
+          "clk_out_led_0",
+          "BinaryCounter_1/clk_out_led"
+        ]
+      },
+      "divizor_ceas_0_clk_out_seg": {
+        "ports": [
+          "divizor_ceas_0/clk_out_seg",
+          "afisare_7seg_0/clk_out_seg"
+        ]
+      },
+      "pauza_0_1": {
+        "ports": [
+          "pauza_0",
+          "BinaryCounter_1/pauza",
+          "BinaryCounter_0/pauza"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "BinaryCounter_1/reset",
+          "BinaryCounter_0/reset",
+          "afisare_7seg_0/reset",
+          "divizor_ceas_0/reset"
+        ]
+      }
+    }
+  }
+}

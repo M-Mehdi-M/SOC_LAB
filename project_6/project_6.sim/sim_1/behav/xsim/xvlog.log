@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_1/project_6/project_6.srcs/sources_1/new/dpr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dpr
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'd_out_a' is not allowed [D:/lab_1/project_6/project_6.srcs/sources_1/new/dpr.v:28]
+WARNING: [VRFC 10-3028] 'd_out_a' was previously declared with a range [D:/lab_1/project_6/project_6.srcs/sources_1/new/dpr.v:28]

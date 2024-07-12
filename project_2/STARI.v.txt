@@ -1,0 +1,89 @@
+//  C:\DOCUMENTS AND SETTINGS\...\STARI.v
+//  Verilog created by Xilinx's StateCAD 10.1
+//  Mon Mar 19 16:30:55 2012
+
+//  This Verilog code (for use with Synopsys) was generated using: 
+//  one-hot state assignment with boolean code format.
+//  Minimization is enabled,  implied else is enabled, 
+//  and outputs are speed optimized.
+
+`timescale 1s/1s
+
+module stari(CLK,B1,B2,B3,RESET,EB1,EB2,ESB);
+
+	input CLK;
+	input B1,B2,B3,RESET;
+	output EB1,EB2,ESB;
+	reg EB1,next_EB1,EB2,next_EB2,ESB,next_ESB;
+	reg A,next_A,B,next_B,C,next_C,D,next_D,E,next_E,F,next_F,G,next_G;
+
+	always @(posedge CLK or posedge RESET)
+	begin
+		if ( RESET ) begin
+			A = 1;
+			B = 0;
+			C = 0;
+			D = 0;
+			E = 0;
+			F = 0;
+			G = 0;
+			EB1 = 0;
+			EB2 = 0;
+			ESB = 0;
+		end else
+		begin
+			A = next_A;
+			B = next_B;
+			C = next_C;
+			D = next_D;
+			E = next_E;
+			F = next_F;
+			G = next_G;
+			EB1 = next_EB1;
+			EB2 = next_EB2;
+			ESB = next_ESB;
+		end
+	end
+
+	always @ (A or B or B1 or B2 or B3 or C or D or E or F or G)
+	begin
+
+		if ( B1 & B3 & A | B1 & B2 & A | ~B2 & ~B3 & ~B1 & A | B3 & B2 & A | B1 & 
+			~B2 & ~B3 & C | D ) next_A=1;
+		else next_A=0;
+
+		if ( B1 & ~B2 & ~B3 & A | B1 & B3 & B | B1 & B2 & B | B2 & B3 & B | ~B3 & 
+			~B2 & ~B1 & B ) next_B=1;
+		else next_B=0;
+
+		if ( B1 & ~B2 & ~B3 & B | B2 & B3 & C | ~B1 & ~B3 & ~B2 & C | B2 & B1 & C |
+			 B3 & B1 & C ) next_C=1;
+		else next_C=0;
+
+		if ( ~B1 & B2 & ~B3 & A | E ) next_D=1;
+		else next_D=0;
+
+		if ( ~B1 & ~B2 & B3 & A | ~B1 & B2 & ~B3 & B | F ) next_E=1;
+		else next_E=0;
+
+		if ( ~B1 & ~B2 & B3 & B | ~B1 & B2 & ~B3 & C | G ) next_F=1;
+		else next_F=0;
+
+		if ( ~B1 & ~B2 & B3 & C ) next_G=1;
+		else next_G=0;
+
+
+		if ( ~B1 & B2 & ~B3 & A | ~B1 & B2 & ~B3 & B | ~B1 & B2 & ~B3 & C | D | E |
+			 F | G ) next_EB1=1;
+		else next_EB1=0;
+
+		if ( ~B1 & ~B2 & B3 & A | ~B1 & ~B2 & B3 & B | ~B1 & ~B2 & B3 & C ) 
+			next_EB2=1;
+		else next_EB2=0;
+
+		if ( ~B1 & B2 & ~B3 & A | ~B1 & ~B2 & B3 & A | ~B1 & ~B2 & B3 & B | ~B1 & 
+			B2 & ~B3 & B | B1 & ~B2 & ~B3 & C | ~B1 & ~B2 & B3 & C | ~B1 & B2 & ~B3 & C )
+			 next_ESB=1;
+		else next_ESB=0;
+	end
+endmodule
